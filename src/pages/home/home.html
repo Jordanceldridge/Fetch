@@ -8,11 +8,40 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3 align="center">Welcome to Fetch <ion-icon ios="ios-paw" md="md-paw"></ion-icon></h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  <p align="center">
+    <!-- If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way. -->
+    Please enter your city, state and zipcode to get pets like this that are adoptable in your area!
   </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-item>
+    <ion-img width="350" height="218" src="https://www.telegraph.co.uk/content/dam/news/2017/06/16/TELEMMGLPICT000132082481-xlarge_trans_NvBQzQNjv4BqgsaO8O78rhmZrDxTlQBjdO0Jyi0jPPD6Zx1hiwTPhlc.jpeg"></ion-img>
+</ion-item>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>City, State</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Zip Code</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <button ion-button outline icon-right block>
+    Fetch!
+    <ion-icon ios="ios-paw" md="md-paw"></ion-icon>
+  </button>
+
+  <!-- <button ion-button fetchButton>FETCH!<ion-icon ios="ios-tennisball" md="md-tennisball"></ion-icon>
+  </button> -->
+
+  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+
 </ion-content>
+
+
