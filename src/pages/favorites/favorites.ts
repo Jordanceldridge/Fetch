@@ -12,7 +12,9 @@ export class Favorites {
     pets:Pet[] = [];
 
     constructor(public navCtrl: NavController) {
-        this.pets.push(new Pet("Bill"));
+        this.pets.push(new Pet("Bill", "http://myhswm.org/images/sized/images/animals/Cilantro-6-HSWM-256x256.jpg"));
+        this.pets.push(new Pet("Sally", "https://www.purina.com/sites/g/files/auxxlc196/files/HOUND_Beagle-%2813inch%29.jpg"));
+        this.pets.push(new Pet("Darlin", "http://www.dogbazar.org/wp-content/uploads/2014/09/british-bull-dog-puppies.jpg"));
     }
 
 }
@@ -21,8 +23,8 @@ class Pet {
     name:string;
     image:string;
 
-    constructor(name:string) {
+    constructor(name:string, image:string) {
         this.name = name;
-        this.image = "http://myhswm.org/images/sized/images/animals/Cilantro-6-HSWM-256x256.jpg";
+        this.image = image;
     }
 }
