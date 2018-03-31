@@ -8,14 +8,14 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { BasicProfile } from '../pages/BasicProfile/basicprofile';
+import { Favorites } from '../pages/favorites/favorites';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    BasicProfile
+    Favorites
   ],
   imports: [
     BrowserModule,
@@ -26,7 +26,7 @@ import { BasicProfile } from '../pages/BasicProfile/basicprofile';
     MyApp,
     HomePage,
     ListPage,
-    BasicProfile
+    Favorites
   ],
   providers: [
     StatusBar,
