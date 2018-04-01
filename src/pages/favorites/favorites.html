@@ -12,13 +12,21 @@
 
     <ion-content>
         <ion-list>
-            <ion-item *ngFor="let pet of pets">
-                <ion-avatar>
-                    <img src={{pet.image}} alt="">
-                </ion-avatar>
-                <h3>{{pet.name}}</h3>
+            <ion-item class="cards-bg social-cards" *ngFor="let pet of pets">
+                <ion-card>
+                    <ion-avatar item-start>
+                        <img src={{pet.image}}>
+                    </ion-avatar>
+                    <h2>{{pet.name}}</h2>
+                </ion-card>
             </ion-item>
         </ion-list>
     </ion-content>
 
 </ion-content>
+
+<style>
+    .social-cards ion-col {
+        padding: 0;
+    }
+</style>

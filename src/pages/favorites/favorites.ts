@@ -22,6 +22,7 @@ export class Favorites {
 class Pet {
     name:string;
     image:string;
+    petProfile:PetProfile;
 
     constructor(name:string, image:string) {
         this.name = name;
