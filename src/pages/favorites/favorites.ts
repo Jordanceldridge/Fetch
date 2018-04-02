@@ -29,4 +29,10 @@ class Pet {
         this.name = name;
         this.image = image;
     }
+
+    
+    public get getName() : string {
+        return this.name;
+    }
+    
 }
