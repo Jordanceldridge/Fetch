@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { BasicProfile } from '../BasicProfile/basicprofile';
+import { PetProfile } from '../petProfile/petProfile';
 
 @Component({
     selector: 'favorites',
@@ -22,7 +23,7 @@ export class Favorites {
 class Pet {
     name:string;
     image:string;
-    petProfile:PetProfile;
+    // petProfile:PetProfile;
 
     constructor(name:string, image:string) {
         this.name = name;
